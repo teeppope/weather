@@ -1,5 +1,5 @@
 {
-  "name": "portfolio-site",
+  "name": "weather",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/teeppope/Portfolio-Site.git"
+    "url": "git+https://github.com/teeppope/weather.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/teeppope/Portfolio-Site/issues"
+    "url": "https://github.com/teeppope/weather/issues"
   },
-  "homepage": "https://github.com/teeppope/Portfolio-Site#readme",
+  "homepage": "https://github.com/teeppope/weather#readme",
   "devDependencies": {
     "babel-loader": "^6.2.5",
     "babel-preset-es2015-webpack2": "^1.0.0",
@@ -30,5 +30,8 @@
     "style-loader": "^0.13.1",
     "webpack": "^2.1.0-beta.25",
     "webpack-dev-server": "^2.1.0-beta.7"
+  },
+  "dependencies": {
+    "babel-core": "^6.18.0"
   }
 }
