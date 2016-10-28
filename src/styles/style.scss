@@ -1,0 +1,14 @@
+//Importing base variables and mixins
+@import 'variables';
+@import 'mixins';
+
+//Importing main site styles
+@import 'reset';
+@import 'elements';
+@import 'typography';
+@import 'header';
+@import 'content';
+@import 'forms';
+@import 'sclicons';
+@import 'modal';
+
