@@ -10,6 +10,7 @@ const PATHS = {
 
 module.exports = {
 	entry: [path.resolve(PATHS.src, 'js/date.js'), 
+			path.resolve(PATHS.src, 'js/weather.js'),
 			path.resolve(PATHS.src, 'js/main.js')],
 	output: {
 		path: PATHS.dist,
