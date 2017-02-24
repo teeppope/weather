@@ -20,11 +20,11 @@ module.exports = {
 		loaders: [
 			{
 				test: /\.(css|scss)$/,
-				loader: ExtractTextPlugin.extract(['css', 'sass'])
+				loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
 			},
 			{
 				test: /\.js$/,
-				loader: 'babel'
+				loader: 'babel-loader'
 			}
 		]
 	},
