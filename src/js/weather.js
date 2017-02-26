@@ -1,51 +1,32 @@
 // ********* SHOW THE DATA **************
 
+// Current Weather Infomation
+
 //Create a function to become a method to use in the showLocation function to display.
-export function getLocation(data) {
-	const location = data.city.name;
-	console.log(location);
+export function getCurrentLocation(data) {
+	const location = data.location.name;
+
 	document.querySelector('#location').innerHTML = location;
 };
 
-export function showTemp(data){
-	console.log(data);
-	const weatherList = data.list;
+export function showCurrentTemp(data){
+	const temperature = data.current.temp_c;
 
-	for(let i = 0; i < weatherList.length; i++){
-
-		const kelvin = 273.15;
-		const tempKelvin = weatherList[i].main.temp;
-		// break out the temp conversion function to it's own file to use for different methods to make a switch button
-		const tempCelcius = Math.round(tempKelvin - kelvin).toFixed(0);
-		
-		document.querySelector('#temp').innerHTML = tempCelcius;
-	
-	}
+	document.querySelector('#temp').innerHTML = temperature;
 
 };
 
-export function showWeather(data) {
-	const weatherList = data.list;
+export function showCurrentWeatherText(data) {
+	const description = data.current.condition.text;
 
-	for(let i = 0; i < weatherList.length; i++){
-
-		const currWeather = weatherList[i].weather[0].description;
-		
-		document.querySelector('#weather').innerHTML = currWeather;
+	document.querySelector('#weather').innerHTML = description;
 	
-	}
-
 };
 
-export function getWeatherIcon(data) {
-	const weatherList = data.list;
+export function getCurrentWeatherIcon(data) {
+	const icon = data.current.condition.icon;
 
-	for(let i = 0; i < weatherList.length; i++){
-
-		const currWeatherIcon = weatherList[i].weather[0].icon;
-		
-		document.querySelector('#icon').innerHTML = "<img src=\"http://openweathermap.org/img/w/"+currWeatherIcon+".png\" alt=\"current weather icon\" >";
-	}
+	document.querySelector('#icon').innerHTML = "<img src=\""+icon+"\" alt=\"current weather icon\" >";
 };
 
 
