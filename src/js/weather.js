@@ -1,6 +1,12 @@
 // ********* SHOW THE DATA **************
 
 //Create a function to become a method to use in the showLocation function to display.
+export function getLocation(data) {
+	const location = data.city.name;
+	console.log(location);
+	document.querySelector('#location').innerHTML = location;
+};
+
 export function showTemp(data){
 	console.log(data);
 	const weatherList = data.list;

@@ -1,7 +1,7 @@
 
 import "normalize.css";
 import "../styles/style.scss";
-import { showTemp, showWeather, getWeatherIcon } from "./weather";
+import { showTemp, showWeather, getWeatherIcon, getLocation } from "./weather";
 
 
 console.log('Javascript works');
@@ -28,6 +28,7 @@ function showLocation(){
 		showTemp(xhr.response);
 		showWeather(xhr.response);
 		getWeatherIcon(xhr.response);
+		getLocation(xhr.response);
 
 	}
 
