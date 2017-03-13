@@ -17,7 +17,7 @@ export function showCurrentWeatherText(data) {
 	const description = data.current.condition.text;
 
 	document.querySelector('#weather').innerHTML = description;
-	
+
 };
 
 export function getCurrentWeatherIcon(data) {
