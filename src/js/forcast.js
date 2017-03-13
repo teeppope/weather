@@ -22,19 +22,19 @@ export function	showForcastDayInfo(data) {
 
 		forecastArea.insertAdjacentHTML(
 			'afterbegin', `<div>
-							         ${maxTemp}
+							         <p>${maxTemp}</p>
 						        </div>
 						        <div>
-						          ${minTemp}
+						          <p>${minTemp}</p>
 						        </div>
 						        <div>
-							         ${date}
+							         <p>${date}</p>
 						        </div>
 						        <div>
                       <img src="${conditionIcon}" alt="${conditionDescription} icon">
 						        </div>
 						        <div>
-                      ${conditionDescription}
+                      <p>${conditionDescription}</p>
 						        </div>`
 		);
 	}
