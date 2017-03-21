@@ -20,23 +20,25 @@ export function	showForcastDayInfo(data) {
 		const conditionIcon = theDate[i].day.condition.icon;
 		const conditionDescription = theDate[i].day.condition.text;
 
-		forecastArea.insertAdjacentHTML(
-			'afterbegin', `<div>
-							         <p>${maxTemp}</p>
-						        </div>
-						        <div>
-						          <p>${minTemp}</p>
-						        </div>
-						        <div>
-							         <p>${date}</p>
-						        </div>
-						        <div>
-                      <img src="${conditionIcon}" alt="${conditionDescription} icon">
-						        </div>
-						        <div>
-                      <p>${conditionDescription}</p>
-						        </div>`
-		);
+		forecastArea.insertAdjacentHTML('afterbegin', `
+      <div class="wrap-forecast">
+        <div>
+	         <p>${maxTemp}</p>
+        </div>
+        <div>
+          <p>${minTemp}</p>
+        </div>
+        <div>
+	         <p>${date}</p>
+        </div>
+        <div>
+          <img src="${conditionIcon}" alt="${conditionDescription} icon">
+        </div>
+        <div>
+          <p>${conditionDescription}</p>
+        </div>
+      </div>
+    `);
 	}
 }
 

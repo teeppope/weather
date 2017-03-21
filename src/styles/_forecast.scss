@@ -1,0 +1,11 @@
+#forecast {
+  display: flex;
+  justify-content: space-between;
+  background-color: $primaryDark;
+  padding: 20px;
+}
+.wrap-forecast {
+  flex-basis: 33%;
+  margin: 0 auto;
+
+}

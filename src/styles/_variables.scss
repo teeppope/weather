@@ -9,12 +9,18 @@ $base-spacing-large: $base-spacing*3;
 $base-spacing-extra-large: $base-spacing*4;
 
 //Typography Variables
-
-
 $font-base-size: 1.6rem;
 $font-base-size-med: 2rem;
 $font-base-size-large: 2.8rem;
 $font-base-size-extra-large: 3.8rem;
 
 //Colour Variables
+$primary: #21A0BF; // medium blue
+$primaryDark: #0B3540; //dark blue teal
+$primaryLight: #2CD6FF; // bright blue
+$secondary: #C77A54; // light burnt orange
+$secondaryBright: #F27131; //bright burnt orange
+//---shade variables
 $white: white;
+$grey: #555;
+$greyDark: #222;
