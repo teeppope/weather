@@ -1,23 +1,23 @@
-h1, h2, h3, h4, h5, h6{
-
+h1, h2, h3, h4, h5, h6 {
+  @include type-style('Roboto');
+  margin-bottom: 1rem;
 }
-h1{
-  font-size: 3rem;
+h1 {
+  @include type-style(false, 5rem, 700);
 }
-h2{
-  font-size: 2.4rem;
+h2 {
+  @include type-style(false, 3rem, 400);
 }
 p,
 button,
 a,
 input,
-textarea{
-  font-size: 1.6rem;
-
+textarea {
+  @include type-style('Roboto', 1.6rem, 100);
 }
-p{
-
+p {
+  margin-bottom: 1.3rem;
 }
-a{
+a {
 	text-decoration: none;
 }

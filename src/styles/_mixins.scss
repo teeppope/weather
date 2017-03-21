@@ -1,3 +1,17 @@
+// Typography
+@mixin type-style( $name: false, $size: false, $weight: false) {
+    @if $name {
+      font-family: $name;
+    }
+    @if $size {
+      font-size: $size;
+    }
+    @if $weight {
+      font-weight: $weight;
+    }
+}
+
+// Media Queries
 @mixin desktop {
 	@media (min-width: #{$desktop-width}) {
 		@content;
