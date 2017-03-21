@@ -1,13 +1,27 @@
 // Typography
 @mixin type-style( $name: false, $size: false, $weight: false) {
     @if $name {
-      font-family: $name;
+      font-family: $name, Helvetica, Arial, sans-serif;
     }
     @if $size {
       font-size: $size;
     }
     @if $weight {
       font-weight: $weight;
+    }
+}
+
+// Flexbox
+@mixin flexify( $direction: false, $justify: false, $items: false) {
+    display: flex;
+    @if $direction {
+      flex-direction: $direction;
+    }
+    @if $justify {
+      justify-content: $justify;
+    }
+    @if $items {
+      align-items: $items;
     }
 }
 

@@ -1,11 +1,17 @@
 #forecast {
-  display: flex;
+  @include flexify( row-reverse, space-between, false);
   justify-content: space-between;
   background-color: $primaryDark;
-  padding: 20px;
+  height: 500px;
 }
 .wrap-forecast {
   flex-basis: 33%;
+  @include flexify( column, center, center);
   margin: 0 auto;
-
+  padding: 2%;
+  border-right: 0.5rem solid $primary;
+  // row-reverse on parent container makes first child visually last
+  &:first-child {
+    border-right: none;
+  }
 }
