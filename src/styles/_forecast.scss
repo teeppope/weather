@@ -1,17 +1,30 @@
 #forecast {
-  @include flexify( row-reverse, space-between, false);
+  @include flexify( column-reverse);
   justify-content: space-between;
   background-color: $primaryDark;
-  height: 500px;
+  @include tablet {
+    height: 35rem;
+    @include flexify( row-reverse, space-between, false);
+  }
 }
 .wrap-forecast {
-  flex-basis: 33%;
   @include flexify( column, center, center);
-  margin: 0 auto;
-  padding: 2%;
-  border-right: 0.5rem solid $primary;
+  padding: 10% 2%;
+  border-bottom: 0.5rem solid $primary;
   // row-reverse on parent container makes first child visually last
   &:first-child {
-    border-right: none;
+    border-bottom: none;
+    @include tablet {
+      border-right: none;
+    }
+  }
+  img {
+    width: 10rem;
+  }
+  @include tablet {
+    flex-basis: 33%;
+    margin: 0 auto;
+    border-bottom: none;
+    border-right: 0.5rem solid $primary;
   }
 }
